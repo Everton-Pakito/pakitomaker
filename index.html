@@ -4,13 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PakitoMaker</title>
-<link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<video id="camera" autoplay playsinline></video>
-<button id="capturar">CAPTURAR</button>
+<div class="container">
+
+  <video id="camera" autoplay playsinline muted></video>
+
+  <div class="overlay">
+    <img src="logo.png" class="logo">
+
+    <div class="timemark">
+      <div>Timemark</div>
+      <small>Foto 100% Real</small>
+    </div>
+
+    <div class="barra"></div>
+
+    <div class="info">
+      <div class="hora" id="hora"></div>
+      <div class="data" id="data"></div>
+      <div class="operacao">Operação: Florestal Suzano</div>
+      <div class="gps" id="gps"></div>
+    </div>
+  </div>
+
+  <button id="capturar">CAPTURAR</button>
+
+</div>
 
 <script src="app.js"></script>
 </body>

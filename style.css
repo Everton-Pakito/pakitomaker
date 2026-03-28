@@ -1,24 +1,57 @@
 body {
   margin: 0;
   background: black;
-  overflow: hidden;
+  font-family: Arial;
 }
-
+.container { position: relative; }
 video {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  background: black;
 }
-
+.overlay {
+  position: absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  color:white;
+  pointer-events:none;
+}
+.logo {
+  position:absolute;
+  top:20px; left:20px;
+  width:180px;
+}
+.timemark {
+  position:absolute;
+  top:20px; right:30px;
+  text-align:right;
+  color:orange;
+  font-weight:bold;
+}
+.timemark small { color:white; }
+.barra {
+  position:absolute;
+  right:0; top:0;
+  width:10px; height:100%;
+  background:red;
+}
+.info {
+  position:absolute;
+  bottom:30px; left:20px;
+  background:rgba(0,0,0,0.6);
+  padding:15px;
+  border-radius:10px;
+}
+.hora { font-size:60px; font-weight:bold; }
+.data { font-size:18px; }
 button {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 18px 40px;
-  font-size: 18px;
-  background: #00c853;
-  color: white;
-  border: none;
-  border-radius: 12px;
+  position:fixed;
+  bottom:20px; left:50%;
+  transform:translateX(-50%);
+  padding:15px 30px;
+  background:#00c853;
+  border:none;
+  border-radius:10px;
+  color:white;
 }
