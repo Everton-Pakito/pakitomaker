@@ -1,9 +1,6 @@
 {
-  "name": "PakitoMaker",
-  "short_name": "Pakito",
-  "display": "standalone",
-  "start_url": ".",
-  "background_color": "#000",
-  "theme_color": "#00c853",
-  "orientation": "any"
+"name":"MarkPakito",
+"short_name":"MarkPakito",
+"display":"standalone",
+"start_url":"."
 }

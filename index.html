@@ -3,35 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PakitoMaker</title>
+<title>MarkPakito</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-
   <video id="camera" autoplay playsinline muted></video>
 
   <div class="overlay">
     <img src="logo.png" class="logo">
 
     <div class="timemark">
-      <div>Timemark</div>
+      <div>PakitoMark</div>
       <small>Foto 100% Real</small>
     </div>
-
-    <div class="barra"></div>
 
     <div class="info">
       <div class="hora" id="hora"></div>
       <div class="data" id="data"></div>
-      <div class="operacao">Operação: Florestal Suzano</div>
-      <div class="gps" id="gps"></div>
+      <div>Operação: Florestal Suzano</div>
+      <div id="gps"></div>
     </div>
   </div>
 
-  <button id="capturar">CAPTURAR</button>
-
+  <button id="capturar" class="btn-capture"></button>
+  <button id="trocar" class="btn-switch">🔄</button>
 </div>
 
 <script src="app.js"></script>
